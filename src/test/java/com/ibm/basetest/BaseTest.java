@@ -21,7 +21,7 @@ public class BaseTest {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
 		System.setProperty("webdriver.ie.driver", "./drivers/IEDriverServer.exe");
-		WebDriver driver = new InternetExplorerDriver();
+		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait = new WebDriverWait(driver, 60); // 60 to 90
 
 		driver.manage().window().maximize();
